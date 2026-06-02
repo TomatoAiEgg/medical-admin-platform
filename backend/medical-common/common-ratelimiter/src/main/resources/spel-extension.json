@@ -1,0 +1,7 @@
+{
+  "com.smartclinic.common.ratelimiter.annotation.RateLimiter@key": {
+    "method": {
+      "parameters": true
+    }
+  }
+}

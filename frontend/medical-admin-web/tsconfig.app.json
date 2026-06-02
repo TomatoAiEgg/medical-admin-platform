@@ -1,0 +1,37 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "src/App.vue",
+    "src/main.ts",
+    "src/api/auth/**/*.ts",
+    "src/api/medical/**/*.ts",
+    "src/config/**/*.ts",
+    "src/layouts/MedicalLayout/**/*.vue",
+    "src/layouts/components/Header/components/Avatar.vue",
+    "src/layouts/components/Header/components/LoginBtn.vue",
+    "src/pages/error/**/*.vue",
+    "src/pages/medical/**/*.ts",
+    "src/pages/medical/**/*.vue",
+    "src/routers/**/*.ts",
+    "src/stores/index.ts",
+    "src/stores/modules/design.ts",
+    "src/stores/modules/user.ts",
+    "src/styles/**/*.scss",
+    "src/utils/**/*.ts",
+    "types/**/*.d.ts"
+  ]
+}

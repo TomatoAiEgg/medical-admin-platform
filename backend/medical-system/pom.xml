@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.smartclinic</groupId>
+        <artifactId>medical-admin-platform</artifactId>
+        <version>${revision}</version>
+            <relativePath>../../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>medical-system</artifactId>
+
+    <description>
+        system系统模块
+    </description>
+
+    <dependencies>
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-doc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-translation</artifactId>
+        </dependency>
+
+        <!-- OSS功能模块 -->
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-oss</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-log</artifactId>
+        </dependency>
+
+        <!-- excel-->
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-excel</artifactId>
+        </dependency>
+
+        <!-- SMS功能模块 -->
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-sms</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-tenant</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-idempotent</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-sensitive</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-encrypt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-websocket</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-sse</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.smartclinic</groupId>
+            <artifactId>common-social</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

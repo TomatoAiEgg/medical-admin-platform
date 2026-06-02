@@ -1,0 +1,225 @@
+@use './tokens';
+
+.medical-page {
+  min-height: 100%;
+  padding: 24px;
+  overflow: auto;
+  color: var(--medical-text);
+  background: var(--medical-bg);
+}
+
+.medical-page,
+.medical-section,
+.medical-filter {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.medical-page__header,
+.medical-section__header,
+.medical-toolbar,
+.medical-actions {
+  display: flex;
+  align-items: center;
+}
+
+.medical-page__header {
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.medical-page__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--medical-text);
+}
+
+.medical-page__desc {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--medical-text-muted);
+}
+
+.medical-actions {
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.medical-actions .el-button + .el-button {
+  margin-left: 0;
+}
+
+.medical-filter {
+  padding: 14px;
+  margin-bottom: 12px;
+  background: var(--medical-surface);
+  border: 1px solid var(--medical-border);
+  border-radius: var(--medical-radius-lg);
+}
+
+.medical-filter :deep(.el-form--inline) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 14px;
+  align-items: flex-end;
+}
+
+.medical-filter :deep(.el-form--inline .el-form-item) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.medical-filter :deep(.el-form-item__label) {
+  padding-right: 8px;
+  font-weight: 500;
+  color: var(--medical-text-secondary);
+}
+
+.medical-filter :deep(.el-input),
+.medical-filter :deep(.el-select) {
+  width: 190px;
+}
+
+.medical-filter :deep(.el-date-editor.el-input__wrapper) {
+  width: 260px;
+}
+
+.medical-section {
+  min-width: 0;
+  background: var(--medical-surface);
+  border: 1px solid var(--medical-border);
+  border-radius: var(--medical-radius-lg);
+}
+
+.medical-section__header {
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--medical-border);
+}
+
+.medical-section__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--medical-text);
+}
+
+.medical-section__body {
+  padding: 14px;
+}
+
+.medical-table {
+  --el-table-header-bg-color: var(--medical-surface-soft);
+  --el-table-header-text-color: var(--medical-text-secondary);
+  --el-table-row-hover-bg-color: var(--medical-primary-soft);
+
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--medical-border);
+  border-radius: var(--medical-radius);
+}
+
+.medical-table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: center;
+}
+
+.medical-table-actions .el-button + .el-button {
+  margin-left: 0;
+}
+
+.medical-table :deep(.el-table__cell) {
+  padding: 8px 0;
+}
+
+.medical-table :deep(th.el-table__cell) {
+  font-weight: 600;
+}
+
+.medical-table :deep(.cell) {
+  line-height: 20px;
+  word-break: break-word;
+}
+
+.medical-mono {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 13px;
+}
+
+.medical-muted {
+  color: var(--medical-text-muted);
+}
+
+.medical-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.medical-grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.medical-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.medical-drawer-body {
+  display: grid;
+  gap: 16px;
+}
+
+.medical-json {
+  padding: 12px;
+  overflow: auto;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  background: var(--medical-surface-soft);
+  border: 1px solid var(--medical-border);
+  border-radius: var(--medical-radius);
+}
+
+@media (max-width: 1200px) {
+  .medical-grid--4,
+  .medical-grid--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .medical-page {
+    padding: 16px;
+  }
+
+  .medical-page__header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .medical-actions {
+    justify-content: flex-start;
+  }
+
+  .medical-filter :deep(.el-form--inline .el-form-item),
+  .medical-filter :deep(.el-input),
+  .medical-filter :deep(.el-select),
+  .medical-filter :deep(.el-date-editor.el-input__wrapper) {
+    width: 100%;
+  }
+
+  .medical-grid--4,
+  .medical-grid--2 {
+    grid-template-columns: 1fr;
+  }
+}

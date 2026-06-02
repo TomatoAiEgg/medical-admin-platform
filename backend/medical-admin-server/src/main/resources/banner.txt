@@ -1,0 +1,3 @@
+医疗运营后台
+Application Version: ${revision}
+Spring Boot Version: ${spring-boot.version}

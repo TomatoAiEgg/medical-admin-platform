@@ -1,0 +1,33 @@
+# Build outputs
+target/
+dist/
+.vite/
+.flattened-pom.xml
+
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+
+# Logs and local data
+*.log
+*.log.gz
+logs/
+data/
+
+# Misc
+*.swp
+*.xml.versionsBackup
+/.claude/settings.local.json
+
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml
